@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<robot name="materials">
+
+  <material name="blue">
+    <color rgba="0 0 0.8 1"/>
+  </material>
+
+  <material name="">
+    <color rgba="0.8 0 0 1"/>
+  </material>
+
+  <material name="white">
+    <color rgba="1 1 1 1"/>
+  </material>
+
+  <link name="link_0">
+    <visual>
+      <geometry>
+        <box size="0.5 0.4 "/>
+      <material name="white"/>
+    </visual>
+  </link>
+
+  <link name="link_1">
+    <visual>
+      <geometry>
+        <cylinder length="5" radius="0.7"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 -0.3"/>
+      <material name="white"/>
+    </visual>
+  </link>
+
+  <joint name="link_0_to_link_1" type="fixed">
+    <parent link="base_link"/>
+    <child link="left_leg"/>
+    <origin xyz="0 0.22 0,25"/>
+  </joint>
+
+  <link name="link_2">
+    <visual>
+      <geometry>
+        <box size=" 3 2"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 -0.3"/>
+      <material name="white"/>
+    </visual>
+  </link>
+
+  <link name="link_3">
+    <visual>
+      <geometry>
+        <cylinder length="5" radius="0.7">
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 -0.3"/>
+      <material name="white"/>
+    </visual>
+  </link>
+</robot>
